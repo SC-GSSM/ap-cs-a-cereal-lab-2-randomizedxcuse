@@ -21,7 +21,7 @@ public class CerealRunner
    * @param: max - the maximum integer value of the range
    * Precondition: min < max
    */
-   public static  ArrayList<Cereal> filterCarbsPerCup(int min, int max) throws IOException
+   public static  ArrayList<Cereal> filterCarbsPerCup(int min, int max)
    {
       //Add your solution to Question 1 here.
       ArrayList<Cereal> list = new ArrayList<Cereal>();
