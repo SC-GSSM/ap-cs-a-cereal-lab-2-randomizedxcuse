@@ -150,8 +150,7 @@ public class CerealRunner
          System.out.println("\nCereal: " + c.getName() + ", NetCarbs: "+ findNetCarbs(c)); 
          } 
       }
-      /*
-      Question 4 Answer
+      /* Question 4 Answer
       All-Bran with Extra Fiber has -6 net carbs. Net carbs should not go negative because one cannot eat negative carbs. It would be zero instead. 
       */
       
