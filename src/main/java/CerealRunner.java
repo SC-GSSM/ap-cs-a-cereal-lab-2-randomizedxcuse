@@ -64,7 +64,9 @@ public class CerealRunner
    *  difference of carbs and fiber for that cereal
    *  @param: c - Cereal object
    */
-    
+   public static double findNetCarbs(Cereal c){
+      return c.getCarbs()-c.getFiber();
+   }
    public static double findNetCarbsPerCup(Cereal c)
    {
       //Add your solution to Question 3 here.
@@ -138,7 +140,7 @@ public class CerealRunner
       System.out.println("\n*****Find Net Carbs Results*****");
       Cereal testCereal = new Cereal("Golden Crisp",100,0,11,0.88);
       System.out.println("Expected results: 11.0");
-      System.out.println("Actual results:   " + findNetCarbsPerCup(testCereal));
+      System.out.println("Actual results:   " + findNetCarbs(testCereal));
 
       for(Cereal c: cereals) { 
          if(c.getName().equals("All-Bran with Extra Fiber") ||   
@@ -148,6 +150,10 @@ public class CerealRunner
          System.out.println("\nCereal: " + c.getName() + ", NetCarbs: "+ findNetCarbs(c)); 
          } 
       }
+      /*
+      Question 4 Answer
+      All-Bran with Extra Fiber has -6 net carbs. Net carbs should not go negative because one cannot eat negative carbs. It would be zero instead. 
+      */
       
    }
 }
