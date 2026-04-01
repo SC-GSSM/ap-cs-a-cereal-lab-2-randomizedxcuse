@@ -1,8 +1,8 @@
 /**
  * Cereal.java  
  *
- * @author – Your name
- * @author – Class period 
+ * @author – Luca
+ * @author – 10:00 AM
  * 
  */
 public class Cereal
