@@ -26,7 +26,7 @@ public class CerealRunner
       //Add your solution to Question 1 here.
       ArrayList<Cereal> list = new ArrayList<Cereal>();
       for (Cereal c: cereals){
-         if (c.getCarbs()/getCups()>=min &&c.getCarbs()/getCups()<=max){
+         if (c.getCarbs()/c.getCups()>=min &&c.getCarbs()/c.getCups()<=max){
             list.add(c);
          }
       }
